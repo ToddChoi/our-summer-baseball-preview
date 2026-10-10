@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>우리들의 여름 · 경기센터</title><link rel="stylesheet" href="career-match.css"><link rel="stylesheet" href="career-director.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="demo.html?slot=1#home">우리들의 여름 <span>고교야구 감독 시뮬레이션</span></a><a class="home-link" href="demo.html?slot=1#home">← 감독실</a></header>
+<main id="match-center">
+ <div class="page-heading"><div><p class="eyebrow" id="competition">우리 학교 경기</p><h1>경기센터</h1></div><p id="fixture-date"></p></div>
+ <div id="message" class="message" role="alert" hidden><span id="message-text"></span><button id="reload" class="secondary" hidden>최신 저장 다시 열기</button></div>
+ <section class="score-card" aria-label="경기 점수">
+  <div class="scoreboard"><div class="score-team away"><small>원정</small><strong id="away-name">상대 학교</strong><b id="away-score">0</b></div><div class="match-status"><span id="inning">경기 준비</span><span id="match-status">시작 전</span></div><div class="score-team home"><small>홈</small><strong id="home-name">우리 학교</strong><b id="home-score">0</b></div></div>
+  <div id="linescore" class="table-scroll"></div>
+ </section>
+ <section class="match-actions" aria-label="경기 진행"><div><button id="manage-match" class="primary" disabled>감독 지휘로 진행 →</button><button id="simulate-match" class="secondary" disabled>전체 자동 경기</button><details class="manual-progress"><summary>세부 진행</summary><div><button data-advance="inning" class="secondary" disabled>공수 전환까지</button><button data-advance="pa" class="secondary" disabled>한 타석 진행</button></div></details></div><p id="save-status" role="status">저장된 경기를 여는 중…</p></section>
+ <section id="score-playback" class="playback-panel panel" hidden aria-label="빠른 점수판 중계"><div class="playback-heading"><div><span class="eyebrow" id="playback-kind">빠른 경기</span><h2 id="playback-inning">1회 초</h2></div><div class="playback-tools"><div class="speed-buttons" aria-label="중계 속도"><button data-playback-speed="1" aria-pressed="true">1×</button><button data-playback-speed="3" aria-pressed="false">3×</button></div><button id="skip-playback" class="secondary">중계 건너뛰기 →</button></div></div><p id="playback-event"></p><progress id="playback-progress" max="100" value="0" aria-label="경기 중계 진행"></progress><p class="note" id="playback-note">저장된 경기 구간을 중계합니다.</p></section>
+ <section id="review" class="result-panel panel" hidden aria-label="경기 종료 요약"></section>
+ <div id="match-details" class="center-grid">
+  <div class="main-column">
+   <section id="situation-panel" class="panel director-panel" aria-label="감독의 경기 상황"><p>저장된 경기 상황을 여는 중입니다.</p></section>
+   <details class="records-fold"><summary>타격·투구 기록 펼치기</summary><section class="panel records-panel"><div class="section-heading"><h2>선수 기록</h2><div class="team-switch" aria-label="기록을 볼 팀"><button data-team="1" aria-pressed="true">우리 학교</button><button data-team="0" aria-pressed="false">상대 학교</button></div></div><p id="records-note" class="note"></p><h3>타자 기록</h3><div id="batting-records" class="table-scroll"></div><h3>투수 기록</h3><div id="pitching-records" class="table-scroll"></div></section></details>
+   <details class="records-fold"><summary>양 팀 기록 펼치기</summary><section class="panel"><div class="section-heading"><h2>팀 기록</h2><span class="muted">이번 경기</span></div><div id="team-records" class="table-scroll"></div></section></details>
+  </div>
+  <aside class="side-column">
+   <section id="manager-panel" class="panel"><div class="section-heading"><h2>감독의 선택</h2><span id="manager-side" class="badge">수비</span></div><p class="note">상황과 선수 상태를 확인하고 지시를 정하세요.</p><p id="pending-note" class="pending-note" hidden>현재 승부의 결과를 계산하기 전에 멈췄습니다. 지시와 교체를 선택하고 확정하세요.</p><label for="pitch-choice">사용할 구종</label><select id="pitch-choice"><option value="auto">투수에게 맡기기</option></select><div id="tactics" class="tactics" aria-label="승부 지시"></div><p id="tactic-help" class="note"></p><button id="bench" class="secondary full-width" disabled>선수 교체 · 불펜 / 대타</button><div id="director-actions"></div></section>
+   <details class="records-fold"><summary>경기 사건 기록 펼치기</summary><section class="panel event-panel"><div class="section-heading"><h2>경기 기록</h2><span class="muted" id="log-count">최근 기록</span></div><ol id="log"><li class="empty">첫 번째 승부를 기다리고 있습니다.</li></ol></section></details>
+  </aside>
+ </div>
+</main>
+<section id="entry-error" hidden role="alert"><h1>경기를 열 수 없습니다</h1><p id="entry-error-text"></p><a class="primary" href="demo.html?slot=1#home">감독실로 돌아가기 →</a></section>
+<dialog id="bench-dialog" class="career-dialog"></dialog>
+<script type="module" src="demo-match.js"></script>
+</body></html>

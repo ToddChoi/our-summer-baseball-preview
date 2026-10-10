@@ -1,0 +1,4 @@
+우리들의 여름 — 창작 고교야구 감독 게임
+학교와 선수는 창작 세계입니다.
+게임 화면의 이미지와 UI는 이 프로젝트의 생성·제작 자산입니다.
+Black Han Sans and Barlow Condensed: SIL Open Font License 1.1. License texts: assets/ui-game/fonts/.
