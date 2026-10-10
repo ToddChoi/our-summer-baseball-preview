@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
- <title>우리들의 여름 · 경기센터</title><link rel="stylesheet" href="career-match.css"><link rel="stylesheet" href="career-director.css">
+ <title>우리들의 여름 · 경기센터</title><link rel="stylesheet" href="career-match.css?v=2cb388e59d73"><link rel="stylesheet" href="career-director.css?v=845c74cdde1d"><link rel="stylesheet" href="styles/portraits.css?v=12407b8bf5a0">
 </head>
 <body>
 <header class="topbar"><a class="brand" href="demo.html?slot=1#home">우리들의 여름 <span>고교야구 감독 시뮬레이션</span></a><a class="home-link" href="demo.html?slot=1#home">← 감독실</a></header>
@@ -23,12 +23,12 @@
    <details class="records-fold"><summary>양 팀 기록 펼치기</summary><section class="panel"><div class="section-heading"><h2>팀 기록</h2><span class="muted">이번 경기</span></div><div id="team-records" class="table-scroll"></div></section></details>
   </div>
   <aside class="side-column">
-   <section id="manager-panel" class="panel"><div class="section-heading"><h2>감독의 선택</h2><span id="manager-side" class="badge">수비</span></div><p class="note">상황과 선수 상태를 확인하고 지시를 정하세요.</p><p id="pending-note" class="pending-note" hidden>현재 승부의 결과를 계산하기 전에 멈췄습니다. 지시와 교체를 선택하고 확정하세요.</p><label for="pitch-choice">사용할 구종</label><select id="pitch-choice"><option value="auto">투수에게 맡기기</option></select><div id="tactics" class="tactics" aria-label="승부 지시"></div><p id="tactic-help" class="note"></p><button id="bench" class="secondary full-width" disabled>선수 교체 · 불펜 / 대타</button><div id="director-actions"></div></section>
+   <section id="manager-panel" class="panel"><div class="section-heading"><h2>감독의 선택</h2><span id="manager-side" class="badge">수비</span></div><p class="note">상황과 선수 상태를 확인하고 지시를 정하세요.</p><p id="pending-note" class="pending-note" hidden>현재 승부의 결과를 계산하기 전에 멈췄습니다. 지시와 교체를 선택하고 확정하세요.</p><label for="pitch-choice">사용할 구종</label><select id="pitch-choice"><option value="auto">투수에게 맡기기</option></select><div id="tactics" class="tactics" aria-label="승부 지시"></div><p id="tactic-help" class="note"></p><div id="running-controls"></div><button id="bench" class="secondary full-width" disabled>선수 교체 · 불펜 / 대타</button><div id="director-actions"></div></section>
    <details class="records-fold"><summary>경기 사건 기록 펼치기</summary><section class="panel event-panel"><div class="section-heading"><h2>경기 기록</h2><span class="muted" id="log-count">최근 기록</span></div><ol id="log"><li class="empty">첫 번째 승부를 기다리고 있습니다.</li></ol></section></details>
   </aside>
  </div>
 </main>
 <section id="entry-error" hidden role="alert"><h1>경기를 열 수 없습니다</h1><p id="entry-error-text"></p><a class="primary" href="demo.html?slot=1#home">감독실로 돌아가기 →</a></section>
 <dialog id="bench-dialog" class="career-dialog"></dialog>
-<script type="module" src="demo-match.js"></script>
+<script type="module" src="demo-match.js?v=783a01b9abf1"></script>
 </body></html>

@@ -1,0 +1,8 @@
+/* The generated atlas is exactly four columns by three rows. No appearance affects gameplay. */
+.avatar.portrait.athlete-portrait{display:inline-block;flex-shrink:0;width:64px;height:64px;aspect-ratio:1;background-color:#a7bdce!important;background-image:url('../assets/ui-game/player-portraits-v1.png')!important;background-size:400% 300%!important;background-position:var(--portrait-x) var(--portrait-y)!important;border:1px solid #a8bac8;border-radius:6px;box-shadow:inset 0 0 0 1px #ffffff35;image-rendering:auto;overflow:hidden;vertical-align:middle}
+.avatar.portrait.athlete-portrait.small{width:40px;height:40px;border-radius:4px}
+.player-dialog-head .avatar.portrait.athlete-portrait{width:92px;height:92px;border-radius:7px}
+.director-player-identity .avatar.portrait.athlete-portrait{width:66px;height:66px}
+.pw-player-name .avatar.portrait.athlete-portrait{width:42px;height:42px;margin-right:9px}
+.portrait-caption{font-size:10px;color:#6d8191}
+@media(max-width:600px){.player-dialog-head .avatar.portrait.athlete-portrait{width:72px;height:72px}.director-player-identity .avatar.portrait.athlete-portrait{width:56px;height:56px}}
