@@ -1,0 +1,15 @@
+{
+  "sourceCommit": "3e11f9073704b95c6190908d82c9ba1231194bd1",
+  "builtAt": "2026-10-11T10:58:11.949Z",
+  "staticFiles": 48,
+  "modules": 71,
+  "styles": 27,
+  "threeD": false,
+  "storageFormatChanged": false,
+  "preDeploymentTests": {
+    "manager": 388,
+    "fail": 0
+  },
+  "nativeBrowserVerified": false,
+  "humanFunVerified": false
+}
