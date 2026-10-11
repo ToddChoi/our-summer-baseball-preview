@@ -1,14 +1,20 @@
 {
-  "sourceCommit": "3e11f9073704b95c6190908d82c9ba1231194bd1",
-  "builtAt": "2026-10-11T10:58:11.949Z",
+  "sourceCommit": "bc5ac7534b993d8b1f6ecde6ab7cd1644cabad61",
+  "builtAt": "2026-10-11T12:13:53.491Z",
   "staticFiles": 48,
-  "modules": 71,
+  "modules": 73,
   "styles": 27,
   "threeD": false,
-  "storageFormatChanged": false,
+  "storageEnvelopeChanged": false,
+  "careerSchema": 13,
+  "optionalSaveFieldsAdded": [
+    "match.broadcast.highlights"
+  ],
+  "legacySaveCompatible": true,
   "preDeploymentTests": {
-    "manager": 388,
-    "fail": 0
+    "manager": 396,
+    "fail": 0,
+    "rerunDuringPublication": false
   },
   "nativeBrowserVerified": false,
   "humanFunVerified": false
