@@ -1,0 +1,32 @@
+/* Compact score broadcast: existing navy/gold controls, a readable 2D runner board. */
+.playback-panel{padding:22px;background:#f8faf9;border-top:3px solid #edbd60}
+.bc-layout{display:grid;grid-template-columns:minmax(280px,.9fr) minmax(0,1fr);gap:24px;margin:20px 0}
+.bc-field-panel{background:#254a3f;color:#f4f2e6;border:1px solid #204238;overflow:hidden;border-radius:4px}
+.bc-field-heading{display:flex;justify-content:space-between;gap:10px;padding:14px 18px;font-size:12px;border-bottom:1px solid #f2ecd91a;background:#183e34}
+.bc-field-heading b{color:#ffda80;white-space:nowrap;letter-spacing:.08em}
+.bc-diamond{width:100%;height:auto;max-height:310px;display:block}
+.bc-bases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#628674;border-top:1px solid #628674}
+.bc-bases>div{display:grid;gap:5px;padding:12px 6px;background:#294f40;text-align:center;min-width:0}
+.bc-bases span{font-size:10px;color:#bccfc4}.bc-bases b{font-size:13px;overflow-wrap:anywhere}.bc-bases .occupied{background:#405940;color:#ffda80}
+.bc-transition{margin:0;padding:9px 14px;font-size:10px;line-height:1.6;background:#204438;color:#cddbd2;text-align:center}
+.bc-matchup{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;background:#f1f5f3;color:var(--ink);padding:14px}
+.bc-player{display:flex;gap:10px;align-items:center;min-width:0}.bc-player>div:last-child{min-width:0;display:grid;gap:4px}.bc-player span{font-size:10px;color:var(--muted)}.bc-player strong{font-size:15px;overflow-wrap:anywhere}.bc-player small{font-size:10px;line-height:1.5;color:var(--muted)}.bc-player .avatar.portrait.athlete-portrait{width:48px;height:48px;flex:none}
+.bc-moves{margin:0;background:#e6eee8;color:#345a47;padding:10px 14px;font-size:10px;line-height:1.8;overflow-wrap:anywhere}
+.bc-commentary{min-width:0;display:flex;flex-direction:column}
+.bc-moment{padding:16px 18px;border-left:4px solid #a6bac6;background:#e9eff2;color:var(--ink);min-height:116px}
+.bc-moment>span{font-size:10px;letter-spacing:.05em;color:#597180}.bc-moment>strong{display:block;font-family:SummerTitle,sans-serif;font-size:30px;font-weight:400;line-height:1.4;margin-top:6px}.bc-moment>strong b{font-family:SummerNumber,sans-serif;font-size:40px}.bc-moment p{margin:4px 0 0;font-size:12px;line-height:1.7;overflow-wrap:anywhere}
+.bc-moment.is-scoring{background:#fff1d2;border-color:#dfac4b;color:#604820}.bc-moment.is-scoring>span{color:#7b642f}.bc-moment.is-scoring[data-side="0"]{background:#f9eae6;border-color:#ba6c54;color:#723f32}.bc-moment[data-moment="running"]{background:#e3eef7;border-color:#4c83a7}
+#playback-event{font-size:14px;min-height:48px;line-height:1.8;margin:14px 0;color:var(--ink)}#playback-event.scoring{color:var(--ink)}
+.bc-highlights{border-top:1px solid var(--line);padding-top:14px;min-width:0}.bc-highlights h3{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0;font-size:13px}.bc-highlights h3 small{color:var(--muted);font-size:10px;font-weight:400}.bc-highlights .note{font-size:10px;margin:7px 0 10px}
+.bc-highlights ol{list-style:none;padding:0;margin:0;display:grid;gap:7px;max-height:255px;overflow:auto;overscroll-behavior:contain}.bc-highlights li{background:#eef3f5;border-left:3px solid #d4b576;padding:9px 12px;min-width:0}.bc-highlights li[data-side="0"]{border-left-color:#b08075}.bc-highlights li>span{font-size:10px;color:var(--muted)}.bc-highlights li>strong{display:flex;justify-content:space-between;gap:12px;margin-top:4px;font-size:12px}.bc-highlights li b{font-variant-numeric:tabular-nums;white-space:nowrap}.bc-highlights li p{font-size:10px;line-height:1.6;margin:5px 0 0;color:var(--muted);overflow-wrap:anywhere}.bc-empty{font-size:11px;color:var(--muted);padding:16px 0;margin:0}
+.result-panel>.bc-highlights{margin-top:20px}.result-panel>.bc-highlights ol{grid-template-columns:repeat(2,minmax(0,1fr));max-height:none}
+.bc-runner-path{fill:none;stroke:#ffda80;stroke-width:2;stroke-dasharray:4 5;opacity:.8}
+.bc-runner-motion{fill:#fff5c9;stroke:#866529;stroke-width:1.5;offset-distance:100%;animation:bc-run var(--bc-run-time,450ms) ease-out both;offset-rotate:0deg}
+@keyframes bc-run{from{offset-distance:0%}to{offset-distance:100%}}
+.bc-score-flash{animation:bc-score 600ms ease-out}@keyframes bc-score{from{text-shadow:0 0 15px #ffda80;color:#fff5d6}to{text-shadow:none}}
+#score-playback[data-paused="true"] .bc-runner-motion{animation-play-state:paused}
+#pause-playback[aria-pressed="true"]{background:#193c54;border-color:#193c54;color:#fff}
+.bc-screen-reader{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:850px){.bc-layout{gap:16px}.playback-tools{flex-wrap:wrap;justify-content:flex-end;gap:8px}.bc-moment>strong{font-size:26px}.bc-matchup{gap:7px;padding:12px}.bc-player{gap:7px}.bc-player .avatar.portrait.athlete-portrait{width:40px;height:40px}.bc-player strong{font-size:13px}}
+@media(max-width:640px){.playback-panel{padding:16px}.bc-layout{grid-template-columns:minmax(0,1fr);gap:16px}.playback-heading{align-items:flex-start}.playback-tools{justify-content:flex-start;width:100%}.playback-tools button{min-height:44px}.bc-diamond{max-height:290px}.bc-moment{min-height:0}.bc-highlights ol{max-height:220px}.result-panel>.bc-highlights ol{grid-template-columns:1fr}.bc-matchup{padding:14px}.bc-player .avatar.portrait.athlete-portrait{width:48px;height:48px}.bc-player strong{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.bc-runner-motion{display:none;animation:none}.bc-score-flash{animation:none}.bc-runner-path{stroke-dasharray:none}}
