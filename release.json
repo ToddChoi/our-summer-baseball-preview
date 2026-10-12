@@ -1,21 +1,35 @@
 {
-  "sourceCommit": "bc5ac7534b993d8b1f6ecde6ab7cd1644cabad61",
-  "builtAt": "2026-10-11T12:13:53.491Z",
+  "sourceCommit": "00b9fbba3579335882fc78cb8d6ff1a897759f2c",
+  "builtAt": "2026-10-12T03:08:32.702Z",
   "staticFiles": 48,
   "modules": 73,
   "styles": 27,
   "threeD": false,
   "storageEnvelopeChanged": false,
   "careerSchema": 13,
-  "optionalSaveFieldsAdded": [
-    "match.broadcast.highlights"
-  ],
+  "optionalSaveFieldsAdded": [],
   "legacySaveCompatible": true,
   "preDeploymentTests": {
-    "manager": 396,
+    "manager": 404,
     "fail": 0,
-    "rerunDuringPublication": false
+    "rerunDuringPublication": true
   },
-  "nativeBrowserVerified": false,
+  "nativeBrowserVerified": true,
+  "browserVerificationScope": "Isolated local-source UI before publication; live-site verification is performed after deployment.",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "demoFixtureSynthetic": true,
   "humanFunVerified": false
 }
