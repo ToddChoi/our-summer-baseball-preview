@@ -16,8 +16,8 @@
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     "index.html": {
-      "bytes": 5749,
-      "sha256": "458603a88210526dafddc8842bf09f0541ddfcbc2c1884592ce1f4dca2662979"
+      "bytes": 5531,
+      "sha256": "f55e8d8d31d9b8f5c18e2f0323253de6354fd8fa28ba229711f95c99afaf2c69"
     },
     "index.js": {
       "bytes": 279815,
@@ -36,16 +36,16 @@
       "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
     },
     "README.md": {
-      "bytes": 196,
-      "sha256": "9748a77f67499f351eba534a5953b80b0fc7d465eec470448c15fc3aa0d804ed"
+      "bytes": 195,
+      "sha256": "271bec07c2b524a7b90aae34ed6dc988d97039c29ffff9eba29d0c811eab6072"
     },
     "license-notices/GODOT-LICENSE.txt": {
       "bytes": 1149,
       "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80"
     },
     "license-notices/GODOT-THIRD-PARTY-NOTICES.txt": {
-      "bytes": 96000,
-      "sha256": "1fbc1d9f385c052d1528d887f7abf71238bb5d74eb337addd68f5e0f19d34a0e"
+      "bytes": 93765,
+      "sha256": "08381e753311429009027b8b303d0197a2eefd37c935021b4b7aba370dc6b7e1"
     }
   },
   "native_check_invocations": 835,
