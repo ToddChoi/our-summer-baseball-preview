@@ -1,0 +1,4 @@
+* text eol=lf
+*.wasm binary
+*.pck binary
+*.png binary
