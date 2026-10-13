@@ -1,11 +1,15 @@
 {
-  "version": "godot-test-20261013-v1",
-  "source_commit": "15cfd9f9844c1056df12624cf4534095c08244da",
+  "version": "godot-management-20261013-v2",
+  "source_commit": "29b418607484d96d0710e1c6f8e9a95335e9a2e3",
   "engine": "4.7.2.stable.official.ed1daf0bf",
   "files": {
     "CREDITS.html": {
-      "bytes": 1915,
-      "sha256": "5f18c703eb314b09c59e8ef9bba09cfe96428d3d4d29ea0660443121523a9fb1"
+      "bytes": 2190,
+      "sha256": "cc6cfb476da555772800a9894e77e2f2047eac0f60560f290beac44064e3301f"
+    },
+    "README.md": {
+      "bytes": 195,
+      "sha256": "271bec07c2b524a7b90aae34ed6dc988d97039c29ffff9eba29d0c811eab6072"
     },
     "index.audio.position.worklet.js": {
       "bytes": 2973,
@@ -16,16 +20,16 @@
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     "index.html": {
-      "bytes": 5531,
-      "sha256": "f55e8d8d31d9b8f5c18e2f0323253de6354fd8fa28ba229711f95c99afaf2c69"
+      "bytes": 5555,
+      "sha256": "2c6a664d5d7d8ae9c626e94df729644b6d313a9eac0706ebddb96afe8ea9b524"
     },
     "index.js": {
       "bytes": 279815,
       "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba"
     },
     "index.pck": {
-      "bytes": 19799012,
-      "sha256": "60ea83cd2f7de742784c36719d3d172892936f2aa21122f8a1cb18c7b311d75d"
+      "bytes": 26740136,
+      "sha256": "2c865d75c4e05d501e61317606d70c8f17a44885e440765cbdfeed36f89589f2"
     },
     "index.png": {
       "bytes": 21443,
@@ -35,10 +39,6 @@
       "bytes": 39514754,
       "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
     },
-    "README.md": {
-      "bytes": 195,
-      "sha256": "271bec07c2b524a7b90aae34ed6dc988d97039c29ffff9eba29d0c811eab6072"
-    },
     "license-notices/GODOT-LICENSE.txt": {
       "bytes": 1149,
       "sha256": "b0435e3b3e4e55238f05f4b306f30524a1b2e20147810d436eaa554fa6855c80"
@@ -46,11 +46,23 @@
     "license-notices/GODOT-THIRD-PARTY-NOTICES.txt": {
       "bytes": 93765,
       "sha256": "08381e753311429009027b8b303d0197a2eefd37c935021b4b7aba370dc6b7e1"
+    },
+    "license-notices/NOTO-SANS-KR-OFL.txt": {
+      "bytes": 4387,
+      "sha256": "babcfe66c8a098b2fa279bc724a3a342f8124f77ce18941fbcc1bbb39823cded"
     }
   },
-  "native_check_invocations": 835,
-  "local_web_render_observed": true,
-  "browser_play_and_persistence_verified": false,
-  "mobile_verified": false,
-  "existing_js_preview_preserved": true
+  "pack_files": 412,
+  "verification": {
+    "management_headless_checks": 388,
+    "native_render_and_engine_input_checks": 26,
+    "policy_runs": 560,
+    "repeated_policy_checks": 126968,
+    "browser_play_verified": false,
+    "browser_persistence_verified": false,
+    "mobile_verified": false
+  },
+  "existing_js_preview_preserved": true,
+  "legacy_technical_sample_preserved": true,
+  "notes": "Policy proxy results do not validate playable nine-inning match balance."
 }
