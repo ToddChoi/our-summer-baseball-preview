@@ -1,6 +1,6 @@
 {
-  "version": "godot-management-20261013-v2",
-  "source_commit": "29b418607484d96d0710e1c6f8e9a95335e9a2e3",
+  "version": "godot-readability-20261013-v3",
+  "source_commit": "47c6beacbf250dfcac68952227b50bda1dbaa5e4",
   "engine": "4.7.2.stable.official.ed1daf0bf",
   "files": {
     "CREDITS.html": {
@@ -8,8 +8,8 @@
       "sha256": "cc6cfb476da555772800a9894e77e2f2047eac0f60560f290beac44064e3301f"
     },
     "README.md": {
-      "bytes": 3907,
-      "sha256": "e4b6d19e3e4772aedede7ab29d034be53e2001f404d05eb5dc1beaca746bf8ac"
+      "bytes": 5551,
+      "sha256": "e625adb4ee6fba60e7d8e737c5830aeedff5d5a64dbcba3bcb39004f6af5cb77"
     },
     "index.audio.position.worklet.js": {
       "bytes": 2973,
@@ -21,15 +21,15 @@
     },
     "index.html": {
       "bytes": 5554,
-      "sha256": "0f3a6414c20480863831d02c127e3042b681cd7b44e41ef44e34d04c861b6767"
+      "sha256": "ed8e9ed191ff104e400fa5cad2c7fb4f9ac8686ef5e93f1c5127c4893dcc2de0"
     },
     "index.js": {
       "bytes": 279815,
       "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba"
     },
     "index.pck": {
-      "bytes": 26740136,
-      "sha256": "2c865d75c4e05d501e61317606d70c8f17a44885e440765cbdfeed36f89589f2"
+      "bytes": 26794632,
+      "sha256": "73a2838844071e5324c226fa06627d1f4e8f6893b697c832af0f098edb86cf90"
     },
     "index.png": {
       "bytes": 21443,
@@ -54,15 +54,24 @@
   },
   "pack_files": 412,
   "verification": {
-    "management_headless_checks": 388,
-    "native_render_and_engine_input_checks": 26,
-    "policy_runs": 560,
-    "repeated_policy_checks": 126968,
+    "model_and_file_save_headless_checks": 375,
+    "ui_workflow_headless_checks": 37,
+    "native_gpu_control_input_checks": 25,
+    "native_screenshots": 8,
+    "native_main_window_minimized_and_unfocusable": true,
+    "desktop_input_used": false,
+    "actual_policy_runs": 96,
+    "negative_control_runs": 4,
+    "actual_games": 5184,
+    "actual_pa_events": 630929,
+    "actual_integration_check_calls": 3237481,
+    "logic_comparison_source_commit": "29b418607484d96d0710e1c6f8e9a95335e9a2e3",
+    "logic_files_unchanged_since_comparison": true,
     "browser_play_verified": false,
     "browser_persistence_verified": false,
     "mobile_verified": false
   },
   "existing_js_preview_preserved": true,
   "legacy_technical_sample_preserved": true,
-  "notes": "Policy proxy results do not validate playable nine-inning match balance."
+  "notes": "Actual-code paired comparisons have four seeds per playable condition. Toy opponent, fatigue floors and skill caps prevent a claim of finished match balance."
 }
