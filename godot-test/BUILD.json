@@ -1,15 +1,15 @@
 {
-  "version": "godot-readability-20261013-v3",
-  "source_commit": "47c6beacbf250dfcac68952227b50bda1dbaa5e4",
+  "version": "r7-candidate1",
+  "published_date": "2026-10-17",
   "engine": "4.7.2.stable.official.ed1daf0bf",
+  "source_base_commit": "47c6beacbf250dfcac68952227b50bda1dbaa5e4",
+  "source_revision_note": "Frozen r7 changes after source_base_commit; this publication updates the web preview only.",
+  "source_tree_sha256": "d455e5a85b30a7deb9918698207b95d6c181340e40ead79abc6340379728baaf",
+  "web_tree_sha256": "a1620f8c7a4c6b9649a5a71ce0c4d1e3295924dba014b97e2a86b6b38f9fc12b",
   "files": {
     "CREDITS.html": {
       "bytes": 2190,
       "sha256": "cc6cfb476da555772800a9894e77e2f2047eac0f60560f290beac44064e3301f"
-    },
-    "README.md": {
-      "bytes": 5551,
-      "sha256": "e625adb4ee6fba60e7d8e737c5830aeedff5d5a64dbcba3bcb39004f6af5cb77"
     },
     "index.audio.position.worklet.js": {
       "bytes": 2973,
@@ -20,16 +20,16 @@
       "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
     },
     "index.html": {
-      "bytes": 5554,
-      "sha256": "ed8e9ed191ff104e400fa5cad2c7fb4f9ac8686ef5e93f1c5127c4893dcc2de0"
+      "bytes": 5392,
+      "sha256": "d8a63afc5b7bc80a9a82c59770c55ffb19ea2e95770124c1046b71ee468332fb"
     },
     "index.js": {
       "bytes": 279815,
       "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba"
     },
     "index.pck": {
-      "bytes": 26794632,
-      "sha256": "73a2838844071e5324c226fa06627d1f4e8f6893b697c832af0f098edb86cf90"
+      "bytes": 27283528,
+      "sha256": "9dfb234b2c7d21816435fd21314bd1625078baeff08669d500638b80558f2852"
     },
     "index.png": {
       "bytes": 21443,
@@ -50,28 +50,25 @@
     "license-notices/NOTO-SANS-KR-OFL.txt": {
       "bytes": 4387,
       "sha256": "babcfe66c8a098b2fa279bc724a3a342f8124f77ce18941fbcc1bbb39823cded"
+    },
+    "README.md": {
+      "bytes": 2282,
+      "sha256": "ff131b83e356e65c5fde2c2996dced288f95af96d88161840a9d01c2a8bf7e2e"
     }
   },
-  "pack_files": 412,
+  "pack_files": 446,
   "verification": {
-    "model_and_file_save_headless_checks": 375,
-    "ui_workflow_headless_checks": 37,
-    "native_gpu_control_input_checks": 25,
-    "native_screenshots": 8,
-    "native_main_window_minimized_and_unfocusable": true,
-    "desktop_input_used": false,
-    "actual_policy_runs": 96,
-    "negative_control_runs": 4,
-    "actual_games": 5184,
-    "actual_pa_events": 630929,
-    "actual_integration_check_calls": 3237481,
-    "logic_comparison_source_commit": "29b418607484d96d0710e1c6f8e9a95335e9a2e3",
-    "logic_files_unchanged_since_comparison": true,
-    "browser_play_verified": false,
-    "browser_persistence_verified": false,
-    "mobile_verified": false
+    "independent_native_checks_passed": 916,
+    "independent_additional_browser_checks_passed": 18,
+    "r6_save_comparisons_byte_equal": 157,
+    "browser_interaction_and_review_seconds": 715.932,
+    "browser_persistence_verified": true,
+    "strict_web_resave_numeric_equality": false,
+    "known_max_resave_numeric_delta": 7.105427357601002e-15,
+    "mobile_verified": false,
+    "fun_validated": false,
+    "scope": "Pre-publication frozen r7-candidate1; public deployment is verified separately."
   },
   "existing_js_preview_preserved": true,
-  "legacy_technical_sample_preserved": true,
-  "notes": "Actual-code paired comparisons have four seeds per playable condition. Toy opponent, fatigue floors and skill caps prevent a claim of finished match balance."
+  "legacy_technical_sample_preserved": true
 }
